@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akash Manda | Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- React and Babel CDN for JSX compilation -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Framer Motion CDN for animations -->
+    <script src="https://cdn.jsdelivr.net/npm/framer-motion@10.16.4/dist/framer-motion.umd.min.js"></script>
+
+    <!-- Heroicons CDN for icons -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@heroicons/react@2.0.18/24/outline/esm/index.js"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@heroicons/react@2.0.18/24/solid/esm/index.js"
+    ></script>
+
+    <style>
+      /* Smooth scrolling behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Basic scrollbar styling for a modern look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background: #2d3748;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900">
+    <div id="root"></div>
+
+    <script type="text/babel" data-presets="react" src="App.jsx"></script>
+  </body>
+</html>
